@@ -18,21 +18,21 @@ namespace Projeto.Dados.Configuracao
                 HasKey(p => p.IdProduto);
 
                 Property(p => p.IdProduto)
-               .HasColumnName("IdProduto_PK")
+               .HasColumnName("IdProduto")
                .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
 
                 Property(p => p.NomeProduto)
-                    .HasColumnName("Nome_Produto")
+                    .HasColumnName("NomeProduto")
                     .HasMaxLength(150)
                     .IsRequired();
 
                 Property(p => p.DescricaoProduto)
-                    .HasColumnName("Descricao_Produto")
+                    .HasColumnName("DescricaoProduto")
                     .HasMaxLength(500)
                     .IsRequired();
 
                 Property(p => p.PrecoProduto)
-                    .HasColumnName("Preco_Produto")
+                    .HasColumnName("PrecoProduto")
                     .HasPrecision(18, 2)
                     .IsRequired();
 
